@@ -1,15 +1,22 @@
 {
   "name": "joshuamichael-ionic",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "rabbitfighter81",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "ionic build --prod",
+    "build:stats": "ng build --prod --aot --stats-json",
+    "analyze": "npx webpack-bundle-analyzer www/stats-es2015.json",
+    "bundle-report": "webpack-bundle-analyzer www/stats-es2015.json",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "release:patch": "yarn version --patch && git push --follow-tags",
+    "release:minor": "yarn version --minor && git push --follow-tags",
+    "release:major": "yarn version --major && git push --follow-tags"
   },
   "private": true,
   "dependencies": {
