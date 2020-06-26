@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Platform } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-root',
@@ -13,38 +13,54 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: 'About',
+      url: '/about',
+      icon: 'at-circle',
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane'
+      title: 'Skills',
+      url: '/skills',
+      icon: 'terminal',
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart'
+      title: 'Experience',
+      url: '/experience',
+      icon: 'business',
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
+      title: 'Contact',
+      url: '/contact',
+      icon: 'chatbubble-ellipses'
     },
-    {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
-    },
-    {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
-    }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
 
+  public socialLinks = [
+    {
+      title: 'CodePen',
+      url: 'https://codepen.io/rabbitfighter81',
+      icon: 'logo-codepen',
+    },
+    {
+      title: 'GitHub',
+      url: 'https://github.com/rabbitfighter81',
+      icon: 'logo-github',
+    },
+    {
+      title: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/joshua-waggoner/',
+      icon: 'logo-linkedin',
+    },
+    {
+      title: 'Twitter',
+      url: 'https://twitter.com/rabbitfighter81',
+      icon: 'logo-twitter',
+    },
+    {
+      title: 'Instagram',
+      url: 'https://www.instagram.com/rabbitfighter81/',
+      icon: 'logo-instagram',
+    },
+  ];
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -61,7 +77,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    const path = window.location.pathname.split('folder/')[1];
+    const path = window.location.pathname.split('/')[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
