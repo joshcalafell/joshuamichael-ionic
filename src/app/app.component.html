@@ -5,6 +5,7 @@
         <ion-list id="labels-list">
           <ion-list-header>Full Stack/UI Developer</ion-list-header>
           <ion-note>Spokane, WA, USA</ion-note>
+
           <ion-menu-toggle auto-hide="false" *ngFor="let page of appPages; let i = index" color="primary">
             <ion-item (click)="selectedIndex = i" routerDirection="root" [routerLink]="[page.url]" lines="none"
               detail="true" [class.selected]="selectedIndex == i">
@@ -13,6 +14,7 @@
               <ion-label>{{ page.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
+
         </ion-list>
 
         <ion-list id="social-list">
