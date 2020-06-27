@@ -8,17 +8,21 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <ion-card class="">
-          <ion-card-content>
-            <ul>
-              <li *ngFor="let item of items;">
-                <p>{{ item }}</p>
-              </li>
-            </ul>
-            <br />
-            <p>For a full resume, feel free to <a routerLink="/contact">Contact Me</a>.</p>
+        <ion-card class="" *ngFor="let item of items; let i = index;">
+          <ion-card-header>
+            <ion-card-title color="primary" class="header">
+              {{ item.title }}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-wrap">
+            {{ item.content }}
           </ion-card-content>
         </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <p>For a full resume, feel free to <a routerLink="/contact">Contact Me</a>.</p>
       </ion-col>
     </ion-row>
   </ion-grid>

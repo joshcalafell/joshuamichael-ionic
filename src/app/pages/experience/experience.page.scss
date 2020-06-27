@@ -1,9 +1,6 @@
-ul {
-    margin: 16px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-    li {
-        margin-bottom: 16px;
-    }
+ion-card {
+  margin-bottom: 32px;
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 16px;
+  }
 }
