@@ -1,8 +1,7 @@
 {
-  "name": "app",
-  "short_name": "app",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Joshua Michael - UI Developer",
+  "short_name": "Joshua Michael",
+  "background_color": "#ba3bec",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
