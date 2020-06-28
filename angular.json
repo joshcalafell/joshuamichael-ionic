@@ -14,6 +14,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+               "firebase/app",
+               "@firebase/util",
+               "@firebase/component",
+               "@firebase/app",
+               "chart.js",
+               "@firebase/firestore"
+             ],
             "outputPath": "www",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,10 +62,10 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "namedChunks": false,
+              "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
