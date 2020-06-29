@@ -1,10 +1,6 @@
 {
   "name": "joshuamichael-ionic",
-<<<<<<< HEAD
   "version": "0.0.9",
-=======
-  "version": "0.0.8",
->>>>>>> feat/experience-page
   "author": "rabbitfighter81",
   "homepage": "https://ionicframework.com/",
   "scripts": {
