@@ -8,33 +8,71 @@ import { SeoService } from 'src/app/services/seo/seo.service';
 })
 export class ExperiencePage implements OnInit {
 
-  items = [
-    { title: 'Project Architecture', content: 'I have planning and project architecture experience, which to me means working to choose the correct technology, creating code patterns using best practices, and viewing an app as the sum of it\'s components as well as being responsible for the direction and releases of applications.' },
-    { title: 'Feature Work and Unit Testing', content: 'Feature development, on both greenfield and legacy codebases, as well as unit testing and E2E testing for all work, with the responsibility of planning and releasing on time.' },
-    { title: 'Feature Work and Unit Testing', content: 'Feature development, on both greenfield and legacy codebases, as well as unit testing and E2E testing for all work, with the responsibility of planning and releasing on time.' },
-    { title: 'Developer and User Documentation', content: ''},
-    { title: 'Developer and User Documentation', content: ''},
-    { title: 'Developer and User Documentation', content: ''},
-    { title: 'Developer and User Documentation', content: ''},
-    { title: 'Developer and User Documentation', content: ''},
-    
-    // 'Writing extensive developer and user documentation',
-    // 'Isolating and fixing bugs',
-    // 'Writing unit tests, integration tests, and E2E tests',
-    // 'Participating in team code review processes',
-    // 'Working on internationalization (i18n) to translate apps',
-    // 'Pair programming and TDD as a way of life',
-    // 'Working with back-end developers to create APIs',
-    // 'CI (Continuous Integration) pipelines for delivering new work',
-    // 'Working with git, branches, and git-flow',
-    // 'Using RESTful APIs as well as WebSocket technologies',
-    // 'Participating in scrums, and both Agile and KanBan process',
-    // 'Management and Team Lead Experience',
-    // 'Training and educating junior team members'
+  exp = [
+    {
+      title: 'Project Architecture',
+      list: [
+        'Framework comparison',
+        'Library research and utilization',
+        'Developing wireframes',
+        'Planning and execution of work-flows',
+        'High-level decision making for the best possible product'
+      ]
+    },
+    {
+      title: 'Development & Feature Work',
+      list: [
+        'Developing new features',
+        'API development and integration',
+        'Unit & E2E testing for code reliability',
+        'True TDD',
+        'Git Flow'
+      ]
+    },
+    {
+      title: 'Documentation',
+      list: [
+        'Developer documentation',
+        'User documentation',
+        'Documenting of re-usable patterns'
+      ]
+    },
+    {
+      title: 'Modern Web Techniques',
+      list: [
+        'Web Assembly',
+        'Service Workers',
+        'Caching',
+        'HTTP2',
+        'RCP',
+        'Internationalization (i18n)',
+        'PWAs',
+        'JavaScript optimization'
+      ]
+    },
+    {
+      title: 'Team Building',
+      list: [
+        'Pair programming',
+        'Developing playbooks for re-usable patterns',
+        'Code review process',
+        'Training and educating junior team members',
+        'Effective communication'
+      ]
+    },
+    {
+      title: 'Research',
+      list: [
+        'Emerging web and mobile technologies',
+        'Best Practices',
+        'Performance optimization',
+        'Writing about my experiences on blogs and forums such as StackOverflow and Medium'
+      ]
+    }
   ];
 
 
-  constructor(private seo: SeoService) {}
+  constructor(private seo: SeoService) { }
 
   ngOnInit() {
     this.seo.generateTags({

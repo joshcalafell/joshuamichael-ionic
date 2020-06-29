@@ -3,4 +3,12 @@ ion-card {
   @media only screen and (max-width: 600px) {
     margin-bottom: 16px;
   }
+  ul#exp-list {
+    margin: 0 8px;
+    padding: 0 18px;
+    li.exp-list-item {
+      padding: 0 6px;
+    }
+  }
 }
+
