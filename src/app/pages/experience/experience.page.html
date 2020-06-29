@@ -8,17 +8,25 @@
   <ion-grid>
     <ion-row>
       <ion-col size="12">
-        <ion-card class="">
+        <ion-card *ngFor="let experience of exp">
+          <ion-card-header>
+            <ion-card-title>
+              {{ experience.title }}
+            </ion-card-title>
+          </ion-card-header>
           <ion-card-content>
-            <ul>
-              <li *ngFor="let item of items;">
-                <p>{{ item }}</p>
+            <ul id="exp-list" role="list">
+              <li class="exp-list-item" *ngFor="let item of experience.list">
+                {{ item }}
               </li>
             </ul>
-            <br />
-            <p>For a full resume, feel free to <a routerLink="/contact">Contact Me</a>.</p>
           </ion-card-content>
         </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <p>For a full resume, feel free to <a routerLink="/contact">Contact Me</a>.</p>
       </ion-col>
     </ion-row>
   </ion-grid>
