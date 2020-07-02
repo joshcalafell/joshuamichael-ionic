@@ -28,7 +28,7 @@
     ],
     "headers": [
       {
-        "source": "/build/app/**",
+        "source": "**",
         "headers": [
           {
             "key": "Cache-Control",
