@@ -15,7 +15,7 @@ $RECYCLE.BIN/
 
 
 # Firebase cache
-.firebase/*.chache
+.firebase/hosting/hosting.*.cache
 
 *.log
 log.txt
