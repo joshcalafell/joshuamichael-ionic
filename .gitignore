@@ -13,6 +13,10 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
 
+
+# Firebase cache
+.firebase/*.chache
+
 *.log
 log.txt
 npm-debug.log*
