@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ValidationErrors, Validators } from '@angular/forms';
-import { ContactService } from 'src/app/services/contact/contact.service';
-import { SeoService } from 'src/app/services/seo/seo.service';
+import { Component, OnInit } from "@angular/core";
+import {
+  FormBuilder,
+  FormGroup,
+  ValidationErrors,
+  Validators,
+} from "@angular/forms";
+import { ContactService } from "src/app/services/contact/contact.service";
+import { SeoService } from "src/app/services/seo/seo.service";
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.page.html',
-  styleUrls: ['./contact.page.scss'],
+  selector: "app-contact",
+  templateUrl: "./contact.page.html",
+  styleUrls: ["./contact.page.scss"],
 })
 export class ContactPage implements OnInit {
-
   contactForm: FormGroup;
 
   constructor(
@@ -17,17 +21,17 @@ export class ContactPage implements OnInit {
     private seo: SeoService
   ) {
     this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(2)]],
-      email: ['', [Validators.required, Validators.email]],
-      subject: ['', Validators.required],
-      message: ['', [Validators.required, Validators.minLength(10)]],
+      name: ["", [Validators.required, Validators.minLength(2)]],
+      email: ["", [Validators.required, Validators.email]],
+      subject: ["", Validators.required],
+      message: ["", [Validators.required, Validators.minLength(10)]],
     });
   }
 
   ngOnInit() {
     this.seo.generateTags({
-      title: 'Joshua Michael Waggoner - Contact',
-      description: 'Contact page to get in touch with Joshua Michael Waggoner'
+      title: "Joshua Michael Calafell - Contact",
+      description: "Contact page to get in touch with Joshua Michael Calafell",
     });
   }
 
@@ -36,14 +40,16 @@ export class ContactPage implements OnInit {
    * @param formData - The form data passed in
    */
   onSubmit(formData: FormData): void {
-    this.contact.postMessage(formData)
-      .subscribe(response => {
-        location.href = 'https://mailthis.to/confirm';
+    this.contact.postMessage(formData).subscribe(
+      (response) => {
+        location.href = "https://mailthis.to/confirm";
         console.log(response);
-      }, error => {
+      },
+      (error) => {
         console.warn(error.responseText);
         console.log({ error });
-      });
+      }
+    );
   }
 
   /**
@@ -52,15 +58,14 @@ export class ContactPage implements OnInit {
    */
   getFormValidationErrors(form: FormGroup) {
     const result = [];
-    Object.keys(form.controls).forEach(key => {
-
+    Object.keys(form.controls).forEach((key) => {
       const controlErrors: ValidationErrors = form.get(key).errors;
       if (controlErrors) {
-        Object.keys(controlErrors).forEach(keyError => {
+        Object.keys(controlErrors).forEach((keyError) => {
           result.push({
             control: key,
             error: keyError,
-            value: controlErrors[keyError]
+            value: controlErrors[keyError],
           });
         });
       }
@@ -72,5 +77,4 @@ export class ContactPage implements OnInit {
   get errorControl() {
     return this.contactForm.controls;
   }
-
 }

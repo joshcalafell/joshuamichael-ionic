@@ -1,84 +1,81 @@
-import { Component, OnInit } from '@angular/core';
-import { SeoService } from 'src/app/services/seo/seo.service';
+import { Component, OnInit } from "@angular/core";
+import { SeoService } from "src/app/services/seo/seo.service";
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.page.html',
-  styleUrls: ['./experience.page.scss'],
+  selector: "app-experience",
+  templateUrl: "./experience.page.html",
+  styleUrls: ["./experience.page.scss"],
 })
 export class ExperiencePage implements OnInit {
-
   exp = [
     {
-      title: 'Project Architecture',
+      title: "Project Architecture",
       list: [
-        'Framework comparison',
-        'Library research and utilization',
-        'Developing wireframes',
-        'Planning and execution of work-flows',
-        'High-level decision making for the best possible product'
-      ]
+        "Framework comparison",
+        "Library research and utilization",
+        "Developing wireframes",
+        "Planning and execution of work-flows",
+        "High-level decision making for the best possible product",
+      ],
     },
     {
-      title: 'Development & Feature Work',
+      title: "Development & Feature Work",
       list: [
-        'Developing new features',
-        'API development and integration',
-        'Unit & E2E testing for code reliability',
-        'True TDD',
-        'Git Flow'
-      ]
+        "Developing new features",
+        "API development and integration",
+        "Unit & E2E testing for code reliability",
+        "True TDD",
+        "Git Flow",
+      ],
     },
     {
-      title: 'Documentation',
+      title: "Documentation",
       list: [
-        'Developer documentation',
-        'User documentation',
-        'Documenting of re-usable patterns'
-      ]
+        "Developer documentation",
+        "User documentation",
+        "Documenting of re-usable patterns",
+      ],
     },
     {
-      title: 'Modern Web Techniques',
+      title: "Modern Web Techniques",
       list: [
-        'Web Assembly',
-        'Service Workers',
-        'Caching',
-        'HTTP2',
-        'RCP',
-        'Internationalization (i18n)',
-        'PWAs',
-        'JavaScript optimization'
-      ]
+        "Web Assembly",
+        "Service Workers",
+        "Caching",
+        "HTTP2",
+        "RCP",
+        "Internationalization (i18n)",
+        "PWAs",
+        "JavaScript optimization",
+      ],
     },
     {
-      title: 'Team Building',
+      title: "Team Building",
       list: [
-        'Pair programming',
-        'Developing playbooks for re-usable patterns',
-        'Code review process',
-        'Training and educating junior team members',
-        'Effective communication'
-      ]
+        "Pair programming",
+        "Developing playbooks for re-usable patterns",
+        "Code review process",
+        "Training and educating junior team members",
+        "Effective communication",
+      ],
     },
     {
-      title: 'Research',
+      title: "Research",
       list: [
-        'Emerging web and mobile technologies',
-        'Best Practices',
-        'Performance optimization',
-        'Writing about my experiences on blogs and forums such as StackOverflow and Medium'
-      ]
-    }
+        "Emerging web and mobile technologies",
+        "Best Practices",
+        "Performance optimization",
+        "Writing about my experiences on blogs and forums such as StackOverflow and Medium",
+      ],
+    },
   ];
 
-
-  constructor(private seo: SeoService) { }
+  constructor(private seo: SeoService) {}
 
   ngOnInit() {
     this.seo.generateTags({
-      title: 'Joshua Michael Waggoner - Experience',
-      description: 'My experiences gained in the workplace'
+      title: "Joshua Michael Calafell - Experience",
+      description: "My experiences gained in the workplace",
     });
   }
-
 }
