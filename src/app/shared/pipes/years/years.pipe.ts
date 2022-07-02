@@ -1,10 +1,10 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-  name: 'years',
+  name: "years",
 })
 export class YearsPipe implements PipeTransform {
   transform(years: number): string {
-    return years > 1 ? years.toString() + ' Years' : years.toString() + ' Year';
+    return years > 1 ? years.toString() + " Years" : years.toString() + " Year";
   }
 }

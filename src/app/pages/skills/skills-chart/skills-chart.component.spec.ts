@@ -1,9 +1,9 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { IonicModule } from "@ionic/angular";
 
-import { SkillsChartComponent } from './skills-chart.component';
+import { SkillsChartComponent } from "./skills-chart.component";
 
-describe('SkillsChartComponent', () => {
+describe("SkillsChartComponent", () => {
   let component: SkillsChartComponent;
   let fixture: ComponentFixture<SkillsChartComponent>;
 
@@ -23,9 +23,9 @@ describe('SkillsChartComponent', () => {
     component.items = undefined;
   }));
 
-  it('should create', () => {
-    component.title = 'Frameworks';
-    component.items = [{ name: 'Angular', years: 6 }];
+  it("should create", () => {
+    component.title = "Frameworks";
+    component.items = [{ name: "Angular", years: 6 }];
     component.ngAfterViewInit();
     expect(component).toBeTruthy();
   });

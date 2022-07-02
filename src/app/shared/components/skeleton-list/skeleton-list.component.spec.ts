@@ -1,16 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { IonicModule } from "@ionic/angular";
 
-import { SkeletonListComponent } from './skeleton-list.component';
+import { SkeletonListComponent } from "./skeleton-list.component";
 
-describe('SkeletonListComponent', () => {
+describe("SkeletonListComponent", () => {
   let component: SkeletonListComponent;
   let fixture: ComponentFixture<SkeletonListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SkeletonListComponent ],
-      imports: [IonicModule.forRoot()]
+      declarations: [SkeletonListComponent],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(SkeletonListComponent);
@@ -18,7 +18,7 @@ describe('SkeletonListComponent', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

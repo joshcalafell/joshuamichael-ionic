@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { SharedModule } from 'src/app/shared/shared.module';
-import { AboutPageRoutingModule } from './about-routing.module';
-import { AboutPage } from './about.page';
-import { CommonModule } from '@angular/common';
-import { SeoService } from 'src/app/services/seo/seo.service';
+import { NgModule } from "@angular/core";
+import { SharedModule } from "src/app/shared/shared.module";
+import { AboutPageRoutingModule } from "./about-routing.module";
+import { AboutPage } from "./about.page";
+import { CommonModule } from "@angular/common";
+import { SeoService } from "src/app/services/seo/seo.service";
 
 @NgModule({
   imports: [
@@ -12,6 +12,6 @@ import { SeoService } from 'src/app/services/seo/seo.service';
     AboutPageRoutingModule,
   ],
   declarations: [AboutPage],
-  providers: [SeoService]
+  providers: [SeoService],
 })
 export class AboutPageModule {}

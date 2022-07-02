@@ -7,9 +7,8 @@
   </ion-card-header>
   <ion-card-content>
     <ion-list>
-      <ion-item *ngFor="let item of items;" lines="none">
-        <ion-icon name="checkmark" color="success" slot="start">
-        </ion-icon>
+      <ion-item *ngFor="let item of items">
+        <ion-icon name="checkmark" color="success" slot="start"> </ion-icon>
         <ion-label>
           {{ item.name }}
         </ion-label>

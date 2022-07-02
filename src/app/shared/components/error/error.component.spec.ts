@@ -1,16 +1,16 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { IonicModule } from '@ionic/angular';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { IonicModule } from "@ionic/angular";
 
-import { ErrorComponent } from './error.component';
+import { ErrorComponent } from "./error.component";
 
-describe('ErrorComponent', () => {
+describe("ErrorComponent", () => {
   let component: ErrorComponent;
   let fixture: ComponentFixture<ErrorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ErrorComponent ],
-      imports: [IonicModule.forRoot()]
+      declarations: [ErrorComponent],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ErrorComponent);
@@ -18,13 +18,13 @@ describe('ErrorComponent', () => {
     fixture.detectChanges();
   }));
 
-  it('should create', () => {
-    component.error = 'Oops, there was an error...';
+  it("should create", () => {
+    component.error = "Oops, there was an error...";
     expect(component).toBeTruthy();
   });
 
-  it('should render', () => {
-    component.error = 'Oops, there was an error...';
+  it("should render", () => {
+    component.error = "Oops, there was an error...";
     expect(component).toBeTruthy();
   });
 });

@@ -21,10 +21,10 @@ export class ExperiencePage implements OnInit {
     {
       title: "Development & Feature Work",
       list: [
-        "Developing new features",
-        "API development and integration",
+        "Planning and implementing new features",
+        "API integration using REST or/or Web Sockets",
         "Unit & E2E testing for code reliability",
-        "True TDD",
+        "Test Driven Development",
         "Git Flow",
       ],
     },
@@ -65,7 +65,7 @@ export class ExperiencePage implements OnInit {
         "Emerging web and mobile technologies",
         "Best Practices",
         "Performance optimization",
-        "Writing about my experiences on blogs and forums such as StackOverflow and Medium",
+        "Writing about my experiences on blogs and forums",
       ],
     },
   ];

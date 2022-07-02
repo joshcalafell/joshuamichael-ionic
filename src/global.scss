@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,60 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Nova+Mono|Roboto+Mono|Lato|Roboto|Oswald");
+
+* {
+  font-family: "Nunito Sans";
+}
+
+ion-card-title,
+ion-list-header,
+ion-card-title,
+ion-title,
+ion-list-item {
+  font-family: "Lato";
+  font-weight: 600;
+}
+
+.title {
+  color: #f9a12d;
+  margin-left: 8px;
+  padding-left: 8px;
+}
+
+app-header {
+  height: 48px;
+}
+
+ion-label {
+  font-weight: 600;
+}
+
+ion-card-subtitle,
+ion-note {
+  color: #e0e0e0;
+}
+
+ion-card-subtitle {
+  font-family: "Nunito Sans";
+  color: #e0e0e0 !important;
+}
+
+ion-badge {
+  padding: 8px;
+  border-radius: 18px;
+}
+
+ul li {
+  font-size: 16px !important;
+}
+
+ion-segment {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-right: 0px;
+}

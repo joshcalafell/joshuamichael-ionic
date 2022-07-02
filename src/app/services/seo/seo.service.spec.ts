@@ -1,19 +1,19 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { SeoService } from './seo.service';
-import { RouterTestingModule } from '@angular/router/testing';
+import { SeoService } from "./seo.service";
+import { RouterTestingModule } from "@angular/router/testing";
 
-describe('SeoService', () => {
+describe("SeoService", () => {
   let service: SeoService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule]
+      imports: [RouterTestingModule],
     });
     service = TestBed.inject(SeoService);
   });
 
-  it('should be created', () => {
+  it("should be created", () => {
     expect(service).toBeTruthy();
   });
 });
