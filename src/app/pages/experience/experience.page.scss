@@ -5,9 +5,15 @@ ion-card {
   }
   ul#exp-list {
     margin: 0 8px;
-    padding: 0 18px;
+    padding: 0 16px;
     li.exp-list-item {
       padding: 0 6px;
     }
   }
+}
+
+.ion-column-paragraph {
+  text-align: center;
+  margin-top: 0px;
+  padding-left: 16px;
 }
