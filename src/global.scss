@@ -25,9 +25,9 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nova+Mono:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Nova+Mono|Oswald|Lato|Roboto|Oswald");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans|Nova+Mono|Oswald|Lato|Roboto|Oswald");
 
 * {
   font-family: "Nunito Sans";
@@ -38,15 +38,14 @@ ion-list-header,
 ion-card-title,
 ion-title,
 ion-list-item {
-  font-family: "Lato";
-  font-weight: 600;
+  font-family: "Open Sans";
 }
 
 .title {
   margin-left: 8px;
   padding-left: 8px;
-  font-family: "Oswald";
-  font-weight: 400;
+  font-family: "Megrim";
+  font-weight: 700;
 }
 
 ion-label {
@@ -54,7 +53,7 @@ ion-label {
 }
 
 ion-card-subtitle {
-  font-family: "Nunito Sans";
+  font-family: "Open Sans";
 }
 
 ion-badge {
@@ -71,4 +70,28 @@ ion-segment {
   padding-right: 0px;
   margin-right: 0px;
   margin-right: 0px;
+}
+
+.block {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 16px;
+  padding: 16px;
+  display: inline-block;
+  p {
+    background-color: #fff;
+    color: #000;
+    padding: 4px;
+    font-size: 12px;
+  }
+}
+
+.block-stripes {
+  background-image: repeating-linear-gradient(
+    -55deg,
+    rgb(209, 178, 208, 0.5),
+    rgba(209, 178, 208, 0.05) 2px,
+    rgba(209, 178, 208, 0.1) 2px,
+    rgba(209, 178, 208, 0.1) 5px
+  );
 }
