@@ -15,30 +15,30 @@ ion-grid ion-row ion-card ion-card-content {
 
 /* Action Sheet Interface: set color for the action sheet using its button CSS variables */
 .my-custom-interface .select-interface-option {
-  --button-color: #971e49;
-  --button-color-hover: #79193b;
+  --button-color: #d83ad2;
+  --button-color-hover: #ab35a7;
 }
 
 /* Alert Interface: set color for alert options (single selection) */
 .my-custom-interface .select-interface-option .alert-radio-label {
-  color: #971e49;
+  color: #d83ad2;
 }
 
 /* Alert Interface: set color for alert options (multiple selection) */
 .my-custom-interface .select-interface-option .alert-checkbox-label {
-  color: #971e49;
+  color: #d83ad2;
 }
 
 /* Alert Interface: set color for checked alert options (single selection) */
 .my-custom-interface
   .select-interface-option[aria-checked="true"]
   .alert-radio-label {
-  color: #79193b;
+  color: #d83ad2;
 }
 
 /* Alert Interface: set color for checked alert options (multiple selection) */
 .my-custom-interface
   .select-interface-option[aria-checked="true"]
   .alert-checkbox-label {
-  color: #79193b;
+  color: #d83ad2;
 }
