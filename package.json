@@ -1,8 +1,8 @@
 {
   "name": "joshuamichael-ionic",
-  "version": "0.0.14",
-  "author": "rabbitfighter81",
-  "homepage": "https://ionicframework.com/",
+  "version": "0.1.0",
+  "author": "Joshua Calafell",
+  "homepage": "https://joshuamichael.me/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -73,5 +73,5 @@
     "webpack": "^4.0.0",
     "webpack-bundle-analyzer": "^3.8.0"
   },
-  "description": "An Ionic project"
+  "description": "My personal website built with Ionic Angular"
 }
