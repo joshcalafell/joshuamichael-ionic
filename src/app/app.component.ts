@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: "LinkedIn",
-      url: "https://www.linkedin.com/in/joshua-Calafell/",
+      url: "https://www.linkedin.com/in/jmcdev/",
       icon: "logo-linkedin",
     },
     {
