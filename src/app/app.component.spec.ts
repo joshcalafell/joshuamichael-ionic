@@ -57,7 +57,6 @@ describe("AppComponent", () => {
     expect(menuItems[4].textContent).toContain("CodePen");
     expect(menuItems[5].textContent).toContain("GitHub");
     expect(menuItems[6].textContent).toContain("LinkedIn");
-    expect(menuItems[7].textContent).toContain("Twitter");
     expect(menuItems[8].textContent).toContain("Instagram");
   });
 
@@ -82,7 +81,6 @@ describe("AppComponent", () => {
     // expect(menuItems[3].getAttribute('href')).toEqual('https://codepen.io/rabbitfighter81');
     // expect(menuItems[4].getAttribute('href')).toEqual('https://github.com/rabbitfighter81');
     // expect(menuItems[5].getAttribute('href')).toEqual('https://www.linkedin.com/in/joshua-Calafell/');
-    // expect(menuItems[6].getAttribute('href')).toEqual('https://twitter.com/rabbitfighter81');
     // expect(menuItems[7].getAttribute('href')).toEqual('https://www.instagram.com/rabbitfighter81/');
   });
 });

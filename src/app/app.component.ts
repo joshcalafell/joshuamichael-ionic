@@ -50,11 +50,6 @@ export class AppComponent implements OnInit {
       icon: "logo-linkedin",
     },
     {
-      title: "Twitter",
-      url: "https://twitter.com/rabbitfighter81",
-      icon: "logo-twitter",
-    },
-    {
       title: "Instagram",
       url: "https://www.instagram.com/rabbitfighter81/",
       icon: "logo-instagram",
