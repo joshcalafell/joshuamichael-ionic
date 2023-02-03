@@ -11,9 +11,6 @@ import { Skill } from "src/app/models/skill.model";
 export class SkillsCollectionService {
   constructor(private database: AngularFirestore) {}
 
-  /**
-   * Gets computer languages
-   */
   getComputerLanguages(): AngularFirestoreCollection<Skill> {
     return this.database.collection<Skill>(
       "computer_languages",
@@ -23,9 +20,6 @@ export class SkillsCollectionService {
     );
   }
 
-  /**
-   * Gets computer technologies
-   */
   getComputerTechnologies(): AngularFirestoreCollection<Skill> {
     return this.database.collection<Skill>(
       "computer_technologies",
@@ -35,9 +29,6 @@ export class SkillsCollectionService {
     );
   }
 
-  /**
-   * Gets computer frameworks
-   */
   getComputerFrameworks(): AngularFirestoreCollection<Skill> {
     return this.database.collection<Skill>(
       "computer_frameworks",
