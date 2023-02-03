@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     const path = window.location.pathname.split("/")[1];
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(

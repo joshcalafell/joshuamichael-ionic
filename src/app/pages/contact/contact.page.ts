@@ -30,8 +30,8 @@ export class ContactPage implements OnInit {
 
   ngOnInit() {
     this.seo.generateTags({
-      title: "Joshua Michael Calafell - Contact",
-      description: "Contact page to get in touch with Joshua Michael Calafell",
+      title: "Joshua Calafell - Contact",
+      description: "Contact page to get in touch with Joshua Calafell",
     });
   }
 
@@ -42,7 +42,7 @@ export class ContactPage implements OnInit {
   onSubmit(formData: FormData): void {
     this.contact.postMessage(formData).subscribe(
       (response) => {
-        location.href = "https://mailthis.to/confirm";
+        location.href = "https://mailthis.to/jcalafell23@gmail.com";
         console.log(response);
       },
       (error) => {

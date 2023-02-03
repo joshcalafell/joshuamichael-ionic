@@ -3,7 +3,11 @@ import { Observable } from "rxjs";
 import { Skill } from "src/app/models/skill.model";
 import { SeoService } from "src/app/services/seo/seo.service";
 import { SkillsCollectionService } from "src/app/services/skills-collection/skills-collection.service";
-import { DisplayType } from "src/app/pages/skills/display-type.enum";
+
+enum DisplayType {
+  List = 1,
+  Chart,
+}
 
 @Component({
   selector: "app-skills",
@@ -32,7 +36,7 @@ export class SkillsPage implements OnInit {
 
     // SEO
     this.seo.generateTags({
-      title: "Joshua Michael Calafell - Skills",
+      title: "Joshua Calafell - Skills",
       description:
         "Languages, frameworks, and technologies used extensively by me",
     });

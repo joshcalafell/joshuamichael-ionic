@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ViewChild } from "@angular/core";
-import { BarChart } from "../../../models/bar-chart.model";
+import { BarChart } from "src/app/models/bar-chart.model";
 import { SkillsBaseComponent } from "../skills-base/skills-base.component";
 
 @Component({
@@ -19,7 +19,7 @@ export class SkillsChartComponent extends SkillsBaseComponent
     super();
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     if (this.items) {
       this.chart = this.createBarChart({
         elem: this.barChart.nativeElement,

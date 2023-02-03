@@ -6,9 +6,9 @@ import { Meta, Title } from "@angular/platform-browser";
   providedIn: "root",
 })
 export class SeoService {
-  site = "Joshua Michael Calafell";
+  site = "Joshua Calafell";
   description =
-    "Personal website of Joshua Michael Calafell - Web and Mobile Developer";
+    "Personal website of Joshua Calafell - Web and Mobile Developer";
 
   constructor(
     private title: Title,

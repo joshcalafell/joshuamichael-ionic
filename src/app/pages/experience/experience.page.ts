@@ -74,7 +74,7 @@ export class ExperiencePage implements OnInit {
 
   ngOnInit() {
     this.seo.generateTags({
-      title: "Joshua Michael Calafell - Experience",
+      title: "Joshua Calafell - Experience",
       description: "My experiences gained in the workplace",
     });
   }
