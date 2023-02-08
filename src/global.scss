@@ -26,7 +26,7 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 
 * {
@@ -94,4 +94,38 @@ ion-segment {
     rgba(209, 178, 208, 0.1) 2px,
     rgba(209, 178, 208, 0.1) 5px
   );
+}
+
+h2 {
+  margin-top: 16px;
+  font-family: "Lato";
+  font-size: 1.2rem;
+}
+
+p {
+  margin-top: 16px;
+  font-size: 1rem;
+  line-height: 1.33rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+ion-footer > ion-toolbar > ion-title {
+  font-size: 12px;
+}
+
+ion-card-title {
+  font-weight: 600;
+}
+
+ion-segment {
+  font-weight: 700;
+  font-size: 1.33rem;
+}
+
+ion-label {
+  color: #333;
+  font-weight: 500;
 }
