@@ -26,10 +26,11 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap");
 
 * {
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
 }
 
 ion-card-title,
@@ -37,13 +38,13 @@ ion-list-header,
 ion-card-title,
 ion-title,
 ion-list-item {
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .title {
   margin-left: 8px;
   padding-left: 8px;
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -52,7 +53,7 @@ ion-label {
 }
 
 ion-card-subtitle {
-  font-family: "Nunito Sans";
+  font-family: "Nunito Sans", sans-serif;
 }
 
 ion-badge {
