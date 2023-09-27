@@ -17,7 +17,7 @@ import { SharedModule } from "./shared/shared.module";
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({ mode: "md", backButtonText: "Voltar" }),
     AppRoutingModule,
     HttpClientModule,
     SharedModule,

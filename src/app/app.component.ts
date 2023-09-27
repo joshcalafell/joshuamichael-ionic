@@ -36,17 +36,17 @@ export class AppComponent implements OnInit {
   public socialLinks = [
     {
       title: "CodePen",
-      url: "https://codepen.io/rabbitfighter81",
+      url: "https://codepen.io/joshcalafell",
       icon: "logo-codepen",
     },
     {
       title: "GitHub",
-      url: "https://github.com/rabbitfighter81",
+      url: "https://github.com/joshcalafell",
       icon: "logo-github",
     },
     {
       title: "LinkedIn",
-      url: "https://www.linkedin.com/in/jmcdev/",
+      url: "https://www.linkedin.com/in/joshuacalafell/",
       icon: "logo-linkedin",
     },
     {
